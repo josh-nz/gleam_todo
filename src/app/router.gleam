@@ -1,10 +1,10 @@
-import gleam/io
-import gleam/http
-import app/routes/item_routes.{items_middleware}
-import lustre/element
-import app/pages/layout.{layout}
 import app/pages
+import app/pages/layout.{layout}
+import app/routes/item_routes.{items_middleware}
 import app/web.{type Context}
+import gleam/http
+import gleam/io
+import lustre/element
 import wisp.{type Request, type Response}
 
 pub fn handle_request(req: Request, ctx: Context) -> Response {
